@@ -1,0 +1,440 @@
+"$schema"='https://starship.rs/config-schema.json'
+
+format="""
+$username\
+$os\
+[](bg:sapphire fg:lavender)\
+$directory\
+[](bg:peach fg:sapphire)\
+$git_branch\
+$git_status\
+[](fg:peach bg:green)\
+$buf\
+$bun\
+$c\
+$cmake\
+$cobol\
+$cpp\
+$crystal\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$fortran\
+$gleam\
+$golang\
+$gradle\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$mojo\
+$nim\
+$nodejs\
+$ocaml\
+$odin\
+$opa\
+$perl\
+$php\
+$purescript\
+$python\
+$quarto\
+$rlang\
+$raku\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$xmake\
+$zig\
+[](fg:green bg:sapphire)\
+[](fg:sapphire bg:lavender)\
+[ ](fg:lavender)\
+$line_break\
+$character"""
+
+palette='catppuccin_mocha'
+
+[os]
+    disabled=false
+    format  ='[[ $symbol( $edition) ](fg:crust bg:lavender)]($style)'
+    style   ="bg:lavender fg:crust"
+
+    [os.symbols]
+        AOSC            =" "
+        AlmaLinux       =" "
+        Alpaquita       =" "
+        Alpine          =" "
+        Amazon          =" "
+        Android         =" "
+        Arch            =" "
+        Artix           =" "
+        CachyOS         =" "
+        CentOS          =" "
+        Debian          =" "
+        DragonFly       =" "
+        Elementary      =" "
+        Emscripten      =" "
+        EndeavourOS     =" "
+        Fedora          =" "
+        FreeBSD         =" "
+        Garuda          ="󰛓 "
+        Gentoo          =" "
+        HardenedBSD     ="󰞌 "
+        Illumos         ="󰈸 "
+        Ios             ="󰀷 "
+        Kali            =" "
+        Linux           =" "
+        Mabox           =" "
+        Macos           =" "
+        Manjaro         =" "
+        Mariner         =" "
+        MidnightBSD     =" "
+        Mint            =" "
+        NetBSD          =" "
+        NixOS           =" "
+        OpenBSD         ="󰈺 "
+        OracleLinux     ="󰌷 "
+        Pop             =" "
+        Raspbian        =" "
+        RedHatEnterprise=" "
+        Redhat          =" "
+        Redox           ="󰀘 "
+        RockyLinux      =" "
+        SUSE            =" "
+        Solus           ="󰠳 "
+        Ubuntu          =" "
+        Unknown         =" "
+        Void            =" "
+        Windows         ="󰍲 "
+        Zorin           =" "
+        openSUSE        =" "
+
+[username]
+    format     ='[ $user ]($style)'
+    show_always=false
+    style_root ="bg:red fg:crust"
+    style_user ="bg:green fg:crust"
+
+[directory]
+    format           ="[ $path ]($style)"
+    style            ="bg:sapphire fg:crust"
+    truncation_length=3
+    truncation_symbol="…/"
+
+[git_branch]
+    format='[[ $symbol $branch ](fg:crust bg:peach)]($style)'
+    style ="bg:peach"
+    symbol=""
+
+[git_status]
+    ahead   ="↑${count} ↓0 "
+    behind  ="↑0 ↓${count} "
+    diverged="↑${ahead_count} ↓${behind_count} "
+    format  ='[[($ahead_behind)](fg:crust bg:peach)]($style)'
+    style   ="bg:peach"
+
+[nodejs]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[c]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=" "
+
+[rust]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[golang]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[php]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[java]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=" "
+
+[kotlin]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[haskell]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[python]
+    format='[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[docker_context]
+    format='[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+    style ="bg:sapphire"
+    symbol=""
+
+[buf]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󱉶"
+
+[bun]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[cmake]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[cobol]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[cpp]
+    disabled=false
+    format  ='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style   ="bg:green"
+    symbol  =""
+
+[crystal]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[daml]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰘦"
+
+[dart]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[deno]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[dotnet]
+    format='[[ $symbol( $version)( $tfm) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰪮"
+
+[elixir]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[elm]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[erlang]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[fennel]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[fortran]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󱈚"
+
+[gleam]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰦨"
+
+[gradle]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[haxe]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[helm]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󱃾"
+
+[julia]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[lua]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[mojo]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[nim]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰆥"
+
+[ocaml]
+    format='[[ $symbol( $version)( $switch_name) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[odin]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰹩"
+
+[opa]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󱤓"
+
+[perl]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[purescript]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[quarto]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰨈"
+
+[rlang]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰟔"
+
+[raku]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[red]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰍷"
+
+[ruby]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[scala]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[solidity]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[swift]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[terraform]
+    format='[[ $symbol( $workspace) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[typst]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[vlang]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[xmake]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol="󰆍"
+
+[zig]
+    format='[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+    style ="bg:green"
+    symbol=""
+
+[character]
+    disabled                 =false
+    error_symbol             ='[❯](bold fg:red)'
+    success_symbol           ='[❯](bold fg:green)'
+    vimcmd_replace_one_symbol='[❮](bold fg:lavender)'
+    vimcmd_replace_symbol    ='[❮](bold fg:lavender)'
+    vimcmd_symbol            ='[❮](bold fg:green)'
+    vimcmd_visual_symbol     ='[❮](bold fg:yellow)'
+
+[palettes.catppuccin_mocha]
+    base     ="#1e1e2e"
+    blue     ="#89b4fa"
+    crust    ="#11111b"
+    flamingo ="#f2cdcd"
+    green    ="#a6e3a1"
+    lavender ="#b4befe"
+    mantle   ="#181825"
+    maroon   ="#eba0ac"
+    mauve    ="#cba6f7"
+    overlay0 ="#6c7086"
+    overlay1 ="#7f849c"
+    overlay2 ="#9399b2"
+    peach    ="#fab387"
+    pink     ="#f5c2e7"
+    red      ="#f38ba8"
+    rosewater="#f5e0dc"
+    sapphire ="#74c7ec"
+    sky      ="#89dceb"
+    subtext0 ="#a6adc8"
+    subtext1 ="#bac2de"
+    surface0 ="#313244"
+    surface1 ="#45475a"
+    surface2 ="#585b70"
+    teal     ="#94e2d5"
+    text     ="#cdd6f4"
+    yellow   ="#f9e2af"
