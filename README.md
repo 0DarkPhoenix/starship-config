@@ -4,6 +4,12 @@ Starship documentation: https://starship.rs/config/
 
 # Initialize on other devices
 ## 1. Clone the repository
+### Windows
+```
+git clone https://github.com/0DarkPhoenix/starship-config.git %USERPROFILE%\.config\starship
+```
+
+### MacOS & Linux
 ```
 git clone https://github.com/0DarkPhoenix/starship-config.git ~/.config/starship
 ```
