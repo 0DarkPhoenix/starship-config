@@ -1,6 +1,6 @@
 # 🚀 Starship
 
-Starship documentation: https://starship.rs/config/
+Starship installation: https://starship.rs/guide/
 
 # Initialize on other devices
 ## 1. Clone the repository
