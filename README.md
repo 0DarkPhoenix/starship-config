@@ -22,7 +22,7 @@ setx STARSHIP_CONFIG %USERPROFILE%\.config\starship\starship.toml
 
 ### MacOS & Linux
 ```
-export STARSHIP_CONFIG="~/.config/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 ```
 
 > [!NOTE]
