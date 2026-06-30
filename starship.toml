@@ -637,7 +637,7 @@ fi
         threshold=100
 
 [time]
-    disabled   =true
+    disabled   =false
     format     ='( [󱑁 $time]($style) )'
     style      ="fg:color_time"
     time_format="%T"
