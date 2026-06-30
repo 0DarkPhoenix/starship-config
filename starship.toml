@@ -1,10 +1,10 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema"='https://starship.rs/config-schema.json'
 
-add_newline = true
+add_newline=true
 
-command_timeout = 2000
+command_timeout=2000
 
-format = """
+format="""
 $os\
 $username\
 $directory\
@@ -14,7 +14,7 @@ $line_break\
 $character\
 """
 
-right_format = """
+right_format="""
 $git_branch\
 $git_commit\
 $git_status\
@@ -81,527 +81,527 @@ ${custom.keyboard_layout}\
 $time\
 """
 
-palette = 'default'
+palette='default'
 
 [palettes.default]
 
-color_caution = 'bright-yellow'
-color_danger = 'bright-red'
-color_ok = 'bright-green'
+    color_caution='bright-yellow'
+    color_danger ='bright-red'
+    color_ok     ='bright-green'
 
-color_container = ''
-color_directory = '#74d1ff'
-color_docker = 'blue'
-color_duration = ''
-color_env = 'blue'
-color_git = '#fda66f'
-color_git_added = 'bright-green'
-color_git_deleted = 'bright-red'
-color_kubernetes = 'purple'
-color_os = '#0099E5'
-color_other = ''
-color_shell = ''
-color_time = ''
-color_username = 'green'
+    color_container  =''
+    color_directory  ='#74d1ff'
+    color_docker     ='blue'
+    color_duration   =''
+    color_env        ='blue'
+    color_git        ='#fda66f'
+    color_git_added  ='bright-green'
+    color_git_deleted='bright-red'
+    color_kubernetes ='purple'
+    color_os         ='#0099E5'
+    color_other      =''
+    color_shell      =''
+    color_time       =''
+    color_username   ='green'
 
-color_lang_buf = '#0099E5'
-color_lang_bun = '#FBF0DF'
-color_lang_c = '#A8B9CC'
-color_lang_cmake = '#064F8C'
-color_lang_cobol = '#005CA5'
-color_lang_cpp = '#00599C'
-color_lang_crystal = '#000100'
-color_lang_daml = '#EF7A08'
-color_lang_dart = '#0175C2'
-color_lang_deno = '#070707'
-color_lang_dotnet = '#512BD4'
-color_lang_elixir = '#4B275F'
-color_lang_elm = '#1293D8'
-color_lang_erlang = '#A90533'
-color_lang_fennel = '#FFF3D7'
-color_lang_fortran = '#4D41B1'
-color_lang_gleam = '#FFAFF3'
-color_lang_golang = '#00ADD8'
-color_lang_gradle = '#02303A'
-color_lang_haskell = '#5D4F85'
-color_lang_haxe = '#EA8220'
-color_lang_helm = '#0F1689'
-color_lang_java = '#ED8B00'
-color_lang_julia = '#9558B2'
-color_lang_kotlin = '#7F52FF'
-color_lang_lua = '#00007C'
-color_lang_mojo = '#FF6D00'
-color_lang_nim = '#FFE953'
-color_lang_nodejs = '#5FA04E'
-color_lang_ocaml = '#EC6813'
-color_lang_odin = '#3882D1'
-color_lang_opa = '#7D9199'
-color_lang_package = '#FF8C00'
-color_lang_perl = '#39457E'
-color_lang_php = '#777BB4'
-color_lang_purescript = '#14161A'
-color_lang_python = '#3776AB'
-color_lang_quarto = '#75AADB'
-color_lang_raku = '#0000FB'
-color_lang_red = '#EE0000'
-color_lang_rlang = '#276DC3'
-color_lang_ruby = '#CC342D'
-color_lang_rust = '#D34516'
-color_lang_scala = '#DC322F'
-color_lang_solidity = '#363636'
-color_lang_swift = '#F05138'
-color_lang_terraform = '#7B42BC'
-color_lang_typst = '#239DAD'
-color_lang_vlang = '#5D87BF'
-color_lang_xmake = '#22C3AA'
-color_lang_zig = '#F7A41D'
+    color_lang_buf       ='#0099E5'
+    color_lang_bun       ='#FBF0DF'
+    color_lang_c         ='#A8B9CC'
+    color_lang_cmake     ='#064F8C'
+    color_lang_cobol     ='#005CA5'
+    color_lang_cpp       ='#00599C'
+    color_lang_crystal   ='#000100'
+    color_lang_daml      ='#EF7A08'
+    color_lang_dart      ='#0175C2'
+    color_lang_deno      ='#070707'
+    color_lang_dotnet    ='#512BD4'
+    color_lang_elixir    ='#4B275F'
+    color_lang_elm       ='#1293D8'
+    color_lang_erlang    ='#A90533'
+    color_lang_fennel    ='#FFF3D7'
+    color_lang_fortran   ='#4D41B1'
+    color_lang_gleam     ='#FFAFF3'
+    color_lang_golang    ='#00ADD8'
+    color_lang_gradle    ='#02303A'
+    color_lang_haskell   ='#5D4F85'
+    color_lang_haxe      ='#EA8220'
+    color_lang_helm      ='#0F1689'
+    color_lang_java      ='#ED8B00'
+    color_lang_julia     ='#9558B2'
+    color_lang_kotlin    ='#7F52FF'
+    color_lang_lua       ='#00007C'
+    color_lang_mojo      ='#FF6D00'
+    color_lang_nim       ='#FFE953'
+    color_lang_nodejs    ='#5FA04E'
+    color_lang_ocaml     ='#EC6813'
+    color_lang_odin      ='#3882D1'
+    color_lang_opa       ='#7D9199'
+    color_lang_package   ='#FF8C00'
+    color_lang_perl      ='#39457E'
+    color_lang_php       ='#777BB4'
+    color_lang_purescript='#14161A'
+    color_lang_python    ='#3776AB'
+    color_lang_quarto    ='#75AADB'
+    color_lang_raku      ='#0000FB'
+    color_lang_red       ='#EE0000'
+    color_lang_rlang     ='#276DC3'
+    color_lang_ruby      ='#CC342D'
+    color_lang_rust      ='#D34516'
+    color_lang_scala     ='#DC322F'
+    color_lang_solidity  ='#363636'
+    color_lang_swift     ='#F05138'
+    color_lang_terraform ='#7B42BC'
+    color_lang_typst     ='#239DAD'
+    color_lang_vlang     ='#5D87BF'
+    color_lang_xmake     ='#22C3AA'
+    color_lang_zig       ='#F7A41D'
 
-color_vimcmd_ok = 'green'
-color_vimcmd_replace = 'purple'
-color_vimcmd_visual = 'yellow'
+    color_vimcmd_ok     ='green'
+    color_vimcmd_replace='purple'
+    color_vimcmd_visual ='yellow'
 
 [os]
-disabled = false
-format = '[$symbol ]($style)'
-style = "fg:color_os"
+    disabled=false
+    format  ='[$symbol ]($style)'
+    style   ="fg:color_os"
 
-[os.symbols]
-AOSC = " "
-AlmaLinux = ""
-Alpaquita = ""
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = ""
-Artix = ""
-CachyOS = ""
-CentOS = ""
-Debian = ""
-DragonFly = ""
-Elementary = ""
-Emscripten = ""
-EndeavourOS = ""
-Fedora = ""
-FreeBSD = ""
-Garuda = "󰛓"
-Gentoo = ""
-HardenedBSD = "󰞌"
-Illumos = "󰈸"
-Ios = "󰀷"
-Kali = ""
-Linux = ""
-Mabox = ""
-Macos = ""
-Manjaro = ""
-Mariner = ""
-MidnightBSD = ""
-Mint = ""
-NetBSD = ""
-NixOS = ""
-OpenBSD = "󰈺"
-OracleLinux = "󰌷"
-Pop = ""
-Raspbian = ""
-RedHatEnterprise = ""
-Redhat = ""
-Redox = "󰀘"
-RockyLinux = ""
-SUSE = ""
-Solus = "󰠳"
-Ubuntu = ""
-Unknown = ""
-Void = ""
-Windows = ""
-Zorin = ""
-openSUSE = ""
+    [os.symbols]
+        AOSC            =" "
+        AlmaLinux       =""
+        Alpaquita       =""
+        Alpine          =""
+        Amazon          =""
+        Android         =""
+        Arch            =""
+        Artix           =""
+        CachyOS         =""
+        CentOS          =""
+        Debian          =""
+        DragonFly       =""
+        Elementary      =""
+        Emscripten      =""
+        EndeavourOS     =""
+        Fedora          =""
+        FreeBSD         =""
+        Garuda          ="󰛓"
+        Gentoo          =""
+        HardenedBSD     ="󰞌"
+        Illumos         ="󰈸"
+        Ios             ="󰀷"
+        Kali            =""
+        Linux           =""
+        Mabox           =""
+        Macos           =""
+        Manjaro         =""
+        Mariner         =""
+        MidnightBSD     =""
+        Mint            =""
+        NetBSD          =""
+        NixOS           =""
+        OpenBSD         ="󰈺"
+        OracleLinux     ="󰌷"
+        Pop             =""
+        Raspbian        =""
+        RedHatEnterprise=""
+        Redhat          =""
+        Redox           ="󰀘"
+        RockyLinux      =""
+        SUSE            =""
+        Solus           ="󰠳"
+        Ubuntu          =""
+        Unknown         =""
+        Void            =""
+        Windows         =""
+        Zorin           =""
+        openSUSE        =""
 
 [username]
-format = '[ $user ]($style)'
-show_always = true
-style_root = "bold fg:color_danger"
-style_user = "fg:color_username"
+    format     ='[ $user ]($style)'
+    show_always=true
+    style_root ="bold fg:color_danger"
+    style_user ="fg:color_username"
 
 [directory]
-fish_style_pwd_dir_length = 0
-format = "[ $path ]($style)"
-home_symbol = "~"
-read_only = " "
-read_only_style = "fg:color_directory"
-repo_root_style = "bold fg:color_directory"
-style = "fg:color_directory"
-truncate_to_repo = true
-truncation_length = 4
-truncation_symbol = "…/"
-use_logical_path = true
+    fish_style_pwd_dir_length=0
+    format                   ="[ $path ]($style)"
+    home_symbol              ="~"
+    read_only                =" "
+    read_only_style          ="fg:color_directory"
+    repo_root_style          ="bold fg:color_directory"
+    style                    ="fg:color_directory"
+    truncate_to_repo         =true
+    truncation_length        =4
+    truncation_symbol        ="…/"
+    use_logical_path         =true
 
 [git_branch]
-always_show_remote = false
-disabled = false
-format = '( [$symbol $branch]($style) )'
-ignore_branches = []
-only_attached = true
-style = "fg:color_git"
-symbol = ""
-truncation_length = 25
-truncation_symbol = "..."
+    always_show_remote=false
+    disabled          =false
+    format            ='( [$symbol $branch]($style) )'
+    ignore_branches   =[]
+    only_attached     =true
+    style             ="fg:color_git"
+    symbol            =""
+    truncation_length =25
+    truncation_symbol ="..."
 
 [git_commit]
-commit_hash_length = 7
-disabled = false
-format = "( [($tag)(@$hash)]($style) )"
-only_detached = true
-style = "fg:color_git"
-tag_disabled = false
-tag_symbol = "󰓼 "
+    commit_hash_length=7
+    disabled          =false
+    format            ="( [($tag)(@$hash)]($style) )"
+    only_detached     =true
+    style             ="fg:color_git"
+    tag_disabled      =false
+    tag_symbol        ="󰓼 "
 
 [git_status]
-ahead = "↑${count} ↓0 "
-behind = "↑0 ↓${count} "
-conflicted = "=${count}"
-deleted = "×${count}"
-disabled = false
-diverged = "↑${ahead_count} ↓${behind_count} "
-format = '([$ahead_behind]($style) )([$all_status]($style) )'
-ignore_submodules = false
-modified = "!${count}"
-renamed = "»${count}"
-staged = "+${count}"
-stashed = "*${count}"
-style = "fg:color_git"
-untracked = "?${count}"
-up_to_date = ""
+    ahead            ="↑${count} ↓0 "
+    behind           ="↑0 ↓${count} "
+    conflicted       ="=${count}"
+    deleted          ="×${count}"
+    disabled         =false
+    diverged         ="↑${ahead_count} ↓${behind_count} "
+    format           ='([$ahead_behind]($style) )([$all_status]($style) )'
+    ignore_submodules=false
+    modified         ="!${count}"
+    renamed          ="»${count}"
+    staged           ="+${count}"
+    stashed          ="*${count}"
+    style            ="fg:color_git"
+    untracked        ="?${count}"
+    up_to_date       =""
 
 [git_metrics]
-added_style = "fg:color_git_added"
-deleted_style = "fg:color_git_deleted"
-disabled = false
-format = '([([+$added]($added_style))([-$deleted]($deleted_style))](fg:color_git) )'
-only_nonzero_diffs = true
+    added_style       ="fg:color_git_added"
+    deleted_style     ="fg:color_git_deleted"
+    disabled          =false
+    format            ='([([+$added]($added_style))([-$deleted]($deleted_style))](fg:color_git) )'
+    only_nonzero_diffs=true
 
 [git_state]
-am = "AM"
-am_or_rebase = "AM/REBASE"
-bisect = "BISECTING"
-cherry_pick = "CHERRY-PICKING"
-disabled = false
-format = '([$state( $progress_current/$progress_total)]($style bold) )'
-merge = "MERGING"
-rebase = "REBASING"
-revert = "REVERTING"
-style = "fg:color_danger"
+    am          ="AM"
+    am_or_rebase="AM/REBASE"
+    bisect      ="BISECTING"
+    cherry_pick ="CHERRY-PICKING"
+    disabled    =false
+    format      ='([$state( $progress_current/$progress_total)]($style bold) )'
+    merge       ="MERGING"
+    rebase      ="REBASING"
+    revert      ="REVERTING"
+    style       ="fg:color_danger"
 
 [nodejs]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_nodejs"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_nodejs"
+    symbol=""
 
 [c]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_c"
-symbol = " "
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_c"
+    symbol=" "
 
 [rust]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_rust"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_rust"
+    symbol=""
 
 [golang]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_golang"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_golang"
+    symbol=""
 
 [php]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_php"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_php"
+    symbol=""
 
 [java]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_java"
-symbol = " "
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_java"
+    symbol=" "
 
 [kotlin]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_kotlin"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_kotlin"
+    symbol=""
 
 [haskell]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_haskell"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_haskell"
+    symbol=""
 
 [python]
-format = '( [$symbol( $version)(\(#$virtualenv\)) ]($style) )'
-style = "fg:color_lang_python"
-symbol = ""
+    format='( [$symbol( $version)(\(#$virtualenv\)) ]($style) )'
+    style ="fg:color_lang_python"
+    symbol=""
 
 [docker_context]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_docker"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_docker"
+    symbol=""
 
 [buf]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_buf"
-symbol = "󱉶"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_buf"
+    symbol="󱉶"
 
 [bun]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_bun"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_bun"
+    symbol=""
 
 [cmake]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_cmake"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_cmake"
+    symbol=""
 
 [cobol]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_cobol"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_cobol"
+    symbol=""
 
 [cpp]
-disabled = false
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_cpp"
-symbol = ""
+    disabled=false
+    format  ='( [$symbol( $version)]($style) )'
+    style   ="fg:color_lang_cpp"
+    symbol  =""
 
 [crystal]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_crystal"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_crystal"
+    symbol=""
 
 [daml]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_daml"
-symbol = "󰘦"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_daml"
+    symbol="󰘦"
 
 [dart]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_dart"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_dart"
+    symbol=""
 
 [deno]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_deno"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_deno"
+    symbol=""
 
 [dotnet]
-format = '( [ $symbol( $version)( $tfm) ]($style) )'
-style = "fg:color_lang_dotnet"
-symbol = "󰪮"
+    format='( [ $symbol( $version)( $tfm) ]($style) )'
+    style ="fg:color_lang_dotnet"
+    symbol="󰪮"
 
 [elixir]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_elixir"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_elixir"
+    symbol=""
 
 [elm]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_elm"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_elm"
+    symbol=""
 
 [erlang]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_erlang"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_erlang"
+    symbol=""
 
 [fennel]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_fennel"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_fennel"
+    symbol=""
 
 [fortran]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_fortran"
-symbol = "󱈚"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_fortran"
+    symbol="󱈚"
 
 [gleam]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_gleam"
-symbol = "󰦨"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_gleam"
+    symbol="󰦨"
 
 [gradle]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_gradle"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_gradle"
+    symbol=""
 
 [haxe]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_haxe"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_haxe"
+    symbol=""
 
 [helm]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_helm"
-symbol = "󱃾"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_helm"
+    symbol="󱃾"
 
 [julia]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_julia"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_julia"
+    symbol=""
 
 [lua]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_lua"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_lua"
+    symbol=""
 
 [mojo]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_mojo"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_mojo"
+    symbol=""
 
 [nim]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_nim"
-symbol = "󰆥"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_nim"
+    symbol="󰆥"
 
 [ocaml]
-format = '[[ $symbol( $version)( $switch_name) ](fg:crust fg:color_lang_ocaml)]($style)'
-style = "fg:color_lang_ocaml"
-symbol = ""
+    format='[[ $symbol( $version)( $switch_name) ](fg:crust fg:color_lang_ocaml)]($style)'
+    style ="fg:color_lang_ocaml"
+    symbol=""
 
 [odin]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_odin"
-symbol = "󰹩"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_odin"
+    symbol="󰹩"
 
 [opa]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_opa"
-symbol = "󱤓"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_opa"
+    symbol="󱤓"
 
 [perl]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_perl"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_perl"
+    symbol=""
 
 [purescript]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_purescript"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_purescript"
+    symbol=""
 
 [quarto]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_quarto"
-symbol = "󰨈"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_quarto"
+    symbol="󰨈"
 
 [rlang]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_rlang"
-symbol = "󰟔"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_rlang"
+    symbol="󰟔"
 
 [raku]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_raku"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_raku"
+    symbol=""
 
 [red]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_red"
-symbol = "󰍷"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_red"
+    symbol="󰍷"
 
 [ruby]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_ruby"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_ruby"
+    symbol=""
 
 [scala]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_scala"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_scala"
+    symbol=""
 
 [solidity]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_solidity"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_solidity"
+    symbol=""
 
 [swift]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_swift"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_swift"
+    symbol=""
 
 [terraform]
-format = '( [ $symbol( $workspace) ]($style) )'
-style = "fg:color_lang_terraform"
-symbol = ""
+    format='( [ $symbol( $workspace) ]($style) )'
+    style ="fg:color_lang_terraform"
+    symbol=""
 
 [typst]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_typst"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_typst"
+    symbol=""
 
 [vlang]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_vlang"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_vlang"
+    symbol=""
 
 [xmake]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_xmake"
-symbol = "󰆍"
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_xmake"
+    symbol="󰆍"
 
 [zig]
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_zig"
-symbol = ""
+    format='( [$symbol( $version)]($style) )'
+    style ="fg:color_lang_zig"
+    symbol=""
 
 [package]
-disabled = false
-format = '( [$symbol( $version)]($style) )'
-style = "fg:color_lang_package"
-symbol = "󰏗"
+    disabled=false
+    format  ='( [$symbol( $version)]($style) )'
+    style   ="fg:color_lang_package"
+    symbol  ="󰏗"
 
 [kubernetes]
-disabled = false
-format = '( [($symbol( $cluster))]($style) )'
-style = "fg:color_kubernetes"
-symbol = "󱃾"
+    disabled=false
+    format  ='( [($symbol( $cluster))]($style) )'
+    style   ="fg:color_kubernetes"
+    symbol  ="󱃾"
 
 [shell]
-bash_indicator = " bash"
-cmd_indicator = " cmd"
-disabled = true
-elvish_indicator = "󰘧 elvish"
-fish_indicator = "󰈺 fish"
-format = '[ $indicator ]($style)'
-ion_indicator = " ion"
-nu_indicator = "󰆧 nu"
-powershell_indicator = " powershell"
-pwsh_indicator = " pwsh"
-style = "fg:color_shell"
-tcsh_indicator = " tcsh"
-unknown_indicator = " ???"
-xonsh_indicator = "󰁥 xonsh"
-zsh_indicator = " zsh"
+    bash_indicator      =" bash"
+    cmd_indicator       =" cmd"
+    disabled            =true
+    elvish_indicator    ="󰘧 elvish"
+    fish_indicator      ="󰈺 fish"
+    format              ='[ $indicator ]($style)'
+    ion_indicator       =" ion"
+    nu_indicator        ="󰆧 nu"
+    powershell_indicator=" powershell"
+    pwsh_indicator      =" pwsh"
+    style               ="fg:color_shell"
+    tcsh_indicator      =" tcsh"
+    unknown_indicator   =" ???"
+    xonsh_indicator     ="󰁥 xonsh"
+    zsh_indicator       =" zsh"
 
 [container]
-format = '( [$symbol $name]($style) )'
-style = "fg:color_container"
+    format='( [$symbol $name]($style) )'
+    style ="fg:color_container"
 
 [jobs]
-format = '( [$symbol( $number)]($style) )'
-number_threshold = 1
-style = "fg:color_other"
-symbol = "󰒋"
-symbol_threshold = 1
+    format          ='( [$symbol( $number)]($style) )'
+    number_threshold=1
+    style           ="fg:color_other"
+    symbol          ="󰒋"
+    symbol_threshold=1
 
 [custom.memory_usage]
-command = "starship module memory_usage"
-disabled = false
-format = "( $output )"
-shell = "sh"
-when = '[ "${STARSHIP_COCKPIT_MEMORY_USAGE_ENABLED:-false}" = "true" ]'
+    command ="starship module memory_usage"
+    disabled=false
+    format  ="( $output )"
+    shell   ="sh"
+    when    ='[ "${STARSHIP_COCKPIT_MEMORY_USAGE_ENABLED:-false}" = "true" ]'
 
 [memory_usage]
-disabled = false
-format = '( [$symbol( ${ram})]($style) )'
-style = "fg:color_other"
-symbol = "󰓅"
-threshold = 0
+    disabled =false
+    format   ='( [$symbol( ${ram})]($style) )'
+    style    ="fg:color_other"
+    symbol   ="󰓅"
+    threshold=0
 
 [custom.battery]
-command = """
+    command="""
 battery_info=$(starship module battery)
 if [ -n "$battery_info" ]; then
     percent=$(echo "$battery_info" | grep -o '[0-9]*%' | sed 's/%//')
@@ -610,73 +610,73 @@ if [ -n "$battery_info" ]; then
     fi
 fi
 """
-disabled = false
-format = "( $output )"
-shell = "sh"
-when = '[ "${STARSHIP_COCKPIT_BATTERY_ENABLED:-false}" = "true" ]'
+    disabled=false
+    format="( $output )"
+    shell="sh"
+    when='[ "${STARSHIP_COCKPIT_BATTERY_ENABLED:-false}" = "true" ]'
 
 [battery]
-charging_symbol = "󰂄"
-disabled = false
-discharging_symbol = "󰂃"
-empty_symbol = "󰂎"
-format = '( [$symbol( $percentage)]($style) )'
-full_symbol = "󰁹"
-unknown_symbol = "󰂑"
+    charging_symbol   ="󰂄"
+    disabled          =false
+    discharging_symbol="󰂃"
+    empty_symbol      ="󰂎"
+    format            ='( [$symbol( $percentage)]($style) )'
+    full_symbol       ="󰁹"
+    unknown_symbol    ="󰂑"
 
-[[battery.display]]
-style = "bold fg:color_danger"
-threshold = 10
+    [[battery.display]]
+        style    ="bold fg:color_danger"
+        threshold=10
 
-[[battery.display]]
-style = "fg:color_caution"
-threshold = 20
+    [[battery.display]]
+        style    ="fg:color_caution"
+        threshold=20
 
-[[battery.display]]
-style = "fg:color_other"
-threshold = 100
+    [[battery.display]]
+        style    ="fg:color_other"
+        threshold=100
 
 [time]
-disabled = false
-format = '( [ $time]($style) )'
-style = "fg:color_time"
-time_format = "%R"
+    disabled   =true
+    format     ='( [󱑁 $time]($style) )'
+    style      ="fg:color_time"
+    time_format="%T"
 
 [cmd_duration]
-disabled = false
-format = '( [󰔛 $duration]($style) )'
-min_time = 500
-show_milliseconds = true
-style = 'fg:color_duration'
+    disabled         =false
+    format           ='( [󰔛 $duration]($style) )'
+    min_time         =500
+    show_milliseconds=true
+    style            ='fg:color_duration'
 
 [status]
-disabled = false
-format = '( [$symbol( $common_meaning prev command)( $signal_name)]($style) )'
-map_symbol = true
-not_executable_symbol = '󰂭'
-not_found_symbol = '󰍉'
-pipestatus = true
-recognize_signal_code = true
-sigint_symbol = '󰐊'
-signal_symbol = '󱐋'
-style = 'fg:color_danger'
-success_symbol = ''
-symbol = ''
+    disabled             =false
+    format               ='( [$symbol( $common_meaning prev command)( $signal_name)]($style) )'
+    map_symbol           =true
+    not_executable_symbol='󰂭'
+    not_found_symbol     ='󰍉'
+    pipestatus           =true
+    recognize_signal_code=true
+    sigint_symbol        ='󰐊'
+    signal_symbol        ='󱐋'
+    style                ='fg:color_danger'
+    success_symbol       =''
+    symbol               =''
 
 [line_break]
-disabled = false
+    disabled=false
 
 [character]
-disabled = false
-error_symbol = '[❯](bold fg:color_danger)'
-success_symbol = '[❯](bold fg:color_ok)'
-vimcmd_replace_one_symbol = '[❮](bold fg:color_vimcmd_replace)'
-vimcmd_replace_symbol = '[❮](bold fg:color_vimcmd_replace)'
-vimcmd_symbol = '[❮](bold fg:color_vimcmd_ok)'
-vimcmd_visual_symbol = '[❮](bold fg:color_vimcmd_visual)'
+    disabled                 =false
+    error_symbol             ='[❯](bold fg:color_danger)'
+    success_symbol           ='[❯](bold fg:color_ok)'
+    vimcmd_replace_one_symbol='[❮](bold fg:color_vimcmd_replace)'
+    vimcmd_replace_symbol    ='[❮](bold fg:color_vimcmd_replace)'
+    vimcmd_symbol            ='[❮](bold fg:color_vimcmd_ok)'
+    vimcmd_visual_symbol     ='[❮](bold fg:color_vimcmd_visual)'
 
 [custom.keyboard_layout]
-command = """
+    command="""
 
 # Set env variables if you want to use layout aliases (in uppercase)
 #     export STARSHIP_COCKPIT_KEYBOARD_LAYOUT_ABC=ENG
@@ -693,9 +693,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
 fi
 
 """
-disabled = false
-format = '( [$symbol $output]($style) )'
-shell = "sh"
-style = "fg:color_other"
-symbol = "󰌌"
-when = '[ "${STARSHIP_COCKPIT_KEYBOARD_LAYOUT_ENABLED:-false}" = "true" ]'
+    disabled=false
+    format='( [$symbol $output]($style) )'
+    shell="sh"
+    style="fg:color_other"
+    symbol="󰌌"
+    when='[ "${STARSHIP_COCKPIT_KEYBOARD_LAYOUT_ENABLED:-false}" = "true" ]'
